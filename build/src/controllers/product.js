@@ -82,7 +82,7 @@ class ProductControl {
                 if (up.matchedCount === 0) {
                     throw new responseErr_1.default(404, "Product not found");
                 }
-                res.status(201).json({ message: "Product added successfully" });
+                res.status(200).json({ message: "Product added successfully" });
             }
             catch (err) {
                 next(err);
